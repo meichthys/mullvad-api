@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mullvad-api
+Version: 1.0.0
+Summary: Python wrapper around mullvad api
+Home-page: UNKNOWN
+Author: meichthys
+License: UNKNOWN
+Description: # MullvadAPI
+        
+        Python wrapper around Mullvad api
+        
+        ## Installation
+        
+        ```bash
+        pip install mullvad_api
+        ```
+        
+        ## QuickStart
+        
+        ```python
+        >>> from mullvad_api import MullvadAPI
+        >>> mullvad = MullvadAPI()
+        >>> mullvad.data.keys()             # List Mullvad API keys
+        >>> mullvad.data["mullvad_exit_ip"] # Check if Mullvad VPN is active
+        True
+        >>> mullvad.data["ip"]              # Check exit ip address
+        '89.46.62.92'
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
