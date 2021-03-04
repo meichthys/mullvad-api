@@ -16,7 +16,7 @@ class MullvadAPI:
 
     def update(self):
         try:
-            response = requests.get(self.api_url)
+            response = requests.get(self.api_url, timeout=10)
             self.data = response.json()
         except:
             raise MullvadAPIError(
