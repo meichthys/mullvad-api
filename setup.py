@@ -13,6 +13,7 @@ setuptools.setup(
     description="Python wrapper around mullvad api",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    url='https://github.com/meichthys/mullvad-api',
     license="MIT",
     install_requires=["requests"],
     py_modules=["mullvad_api"],
